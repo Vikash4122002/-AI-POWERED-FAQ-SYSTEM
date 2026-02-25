@@ -1,0 +1,77 @@
+version: '3.8'
+
+services:
+  # ── FAQ API ──────────────────────────────────────────────────────────────
+  faq-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: faq-api
+    ports:
+      - "8000:8000"
+    environment:
+      - LOG_LEVEL=INFO
+      - ENVIRONMENT=production
+    volumes:
+      - ./saved_models:/app/saved_models:ro
+      - ./data:/app/data:ro
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 40s
+    networks:
+      - faq-network
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 2G
+        reservations:
+          cpus: '0.5'
+          memory: 1G
+
+  # ── Redis (optional caching) ─────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: faq-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+    networks:
+      - faq-network
+    command: redis-server --appendonly yes --maxmemory 512mb --maxmemory-policy allkeys-lru
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+
+  # ── Nginx reverse proxy ──────────────────────────────────────────────────
+  nginx:
+    image: nginx:alpine
+    container_name: faq-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - faq-api
+    restart: unless-stopped
+    networks:
+      - faq-network
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+
+volumes:
+  redis-data:
+
+networks:
+  faq-network:
+    driver: bridge

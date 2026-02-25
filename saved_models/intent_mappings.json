@@ -1,0 +1,30 @@
+{
+  "intent_to_idx": {
+    "account_delete": 0,
+    "account_management": 1,
+    "api": 2,
+    "billing": 3,
+    "cancellation": 4,
+    "contact_support": 5,
+    "features": 6,
+    "notifications": 7,
+    "password_reset": 8,
+    "pricing": 9,
+    "refund_policy": 10,
+    "security": 11
+  },
+  "idx_to_intent": {
+    "0": "account_delete",
+    "1": "account_management",
+    "2": "api",
+    "3": "billing",
+    "4": "cancellation",
+    "5": "contact_support",
+    "6": "features",
+    "7": "notifications",
+    "8": "password_reset",
+    "9": "pricing",
+    "10": "refund_policy",
+    "11": "security"
+  }
+}
