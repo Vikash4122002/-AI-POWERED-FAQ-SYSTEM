@@ -243,20 +243,6 @@ curl -X POST http://localhost:8000/ask \
 }
 ```
 
----
-
-## 📊 Model Performance
-
-| Metric | Value |
-|--------|-------|
-| Intent Categories | 12 |
-| Training Samples | 84 |
-| Model Parameters | 112,460 |
-| Best Confidence | 90.6% (cancellation) |
-| Avg Confidence | ~78% |
-| Response Time | < 1ms |
-| Vocabulary Size | 271 features |
-
 ### Intent Categories:
 
 ```
@@ -282,21 +268,6 @@ python ml/test_vectorizer.py
 # Test all API endpoints
 python app/test_api.py
 ```
-
-### Test Results:
-```
-✅ ROOT endpoint         200 OK
-✅ HEALTH check          200 OK
-✅ MODEL INFO            200 OK
-✅ INTENTS list          200 OK
-✅ FAQ STATS             200 OK
-✅ SINGLE question /ask  200 OK
-✅ BATCH questions       200 OK
-✅ FEEDBACK endpoint     200 OK
-✅ EDGE CASES            422 (expected)
-```
-
----
 
 ## 🐳 Docker Deployment
 
@@ -364,10 +335,8 @@ trainer.train(
 **Vikash Kumar**
 
 - 📧 Email: vikash111107@gmail.com
-- 💼 LinkedIn: [linkedin.com/in/vikash-kumar](https://linkedin.com/in/vikash-kumar)
 - 🐙 GitHub: [github.com/Vikash4122002](https://github.com/Vikash4122002)
 - 🐳 Docker Hub: [hub.docker.com/r/vikash4122002](https://hub.docker.com/r/vikash4122002)
-- 💻 LeetCode: [leetcode.com/vikashkumar](https://leetcode.com/vikashkumar)
 
 ---
 
@@ -378,8 +347,6 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 <div align="center">
-
-⭐ **Star this repo if you found it helpful!** ⭐
 
 Made with ❤️ by Vikash Kumar
 
