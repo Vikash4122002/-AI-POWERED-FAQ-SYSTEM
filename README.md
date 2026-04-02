@@ -11,7 +11,7 @@
 
 **An intelligent FAQ chatbot that automatically classifies user questions into 12 intent categories and returns the most relevant answer using Deep Learning.**
 
-[ Docker Hub](https://hub.docker.com/r/vikash4122002/faq-system) • [📖 API Docs](http://localhost:8000/docs) • [ Give a Star](https://github.com/Vikash4122002/AI-POWERED-FAQ-SYSTEM)
+[ Docker Hub](https://hub.docker.com/r/vikash4122002/faq-system) • [ API Docs](http://localhost:8000/docs) • [ Give a Star](https://github.com/Vikash4122002/AI-POWERED-FAQ-SYSTEM)
 
 </div>
 
