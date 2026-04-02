@@ -1,4 +1,4 @@
-# 🤖 AI-Powered FAQ System
+#  AI-Powered FAQ System
 
 <div align="center">
 
@@ -11,13 +11,13 @@
 
 **An intelligent FAQ chatbot that automatically classifies user questions into 12 intent categories and returns the most relevant answer using Deep Learning.**
 
-[🐳 Docker Hub](https://hub.docker.com/r/vikash4122002/faq-system) • [📖 API Docs](http://localhost:8000/docs) • [⭐ Give a Star](https://github.com/Vikash4122002/AI-POWERED-FAQ-SYSTEM)
+[ Docker Hub](https://hub.docker.com/r/vikash4122002/faq-system) • [📖 API Docs](http://localhost:8000/docs) • [ Give a Star](https://github.com/Vikash4122002/AI-POWERED-FAQ-SYSTEM)
 
 </div>
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 
 - [Overview](#-overview)
 - [Features](#-features)
@@ -33,7 +33,7 @@
 
 ---
 
-## 🌟 Overview
+##  Overview
 
 The AI-Powered FAQ System is a production-ready intelligent chatbot built with **PyTorch ANN** for intent classification and **FastAPI** for the REST API backend.
 
@@ -45,21 +45,21 @@ User Question → Preprocess → TF-IDF → ANN Model → Intent → Answer
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🧠 **PyTorch Neural Network** — 3 hidden layers with BatchNorm and Dropout
-- ⚡ **FastAPI REST API** — 7 endpoints with automatic Swagger docs
-- 🎯 **12 Intent Categories** — password reset, billing, refund, security and more
-- 💬 **Beautiful Chat UI** — dark themed frontend with confidence scores
-- 🐳 **Docker Ready** — run entire project with 2 commands
-- 📦 **Docker Hub Published** — publicly available image
-- 🔄 **Batch Processing** — process up to 100 questions at once
-- ⏱️ **< 1ms Response Time** — lightning fast predictions
-- 📊 **90%+ Confidence** — high accuracy intent classification
+- **PyTorch Neural Network** — 3 hidden layers with BatchNorm and Dropout
+- **FastAPI REST API** — 7 endpoints with automatic Swagger docs
+- **12 Intent Categories** — password reset, billing, refund, security and more
+- **Beautiful Chat UI** — dark themed frontend with confidence scores
+- **Docker Ready** — run entire project with 2 commands
+- **Docker Hub Published** — publicly available image
+- **Batch Processing** — process up to 100 questions at once
+- **< 1ms Response Time** — lightning fast predictions
+- **90%+ Confidence** — high accuracy intent classification
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
                         AI-Powered FAQ System
@@ -102,12 +102,12 @@ User Question
 └─────────────────┘
      │
      ▼
-   Answer ✅
+   Answer 
 ```
 
 ---
 
-## 💻 Tech Stack
+##  Tech Stack
 
 | Category | Technology |
 |----------|-----------|
@@ -124,7 +124,7 @@ User Question
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 AI-POWERED-FAQ-SYSTEM/
@@ -165,9 +165,9 @@ AI-POWERED-FAQ-SYSTEM/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
-### Option 1 — Docker (Recommended) 🐳
+### Option 1 — Docker (Recommended) 
 
 No Python setup needed! Just 2 commands:
 
@@ -246,17 +246,17 @@ curl -X POST http://localhost:8000/ask \
 ### Intent Categories:
 
 ```
-✅ password_reset      ✅ account_delete
-✅ refund_policy       ✅ contact_support
-✅ pricing             ✅ billing
-✅ cancellation        ✅ security
-✅ features            ✅ account_management
-✅ notifications       ✅ api
+ password_reset       account_delete
+ refund_policy        contact_support
+ pricing              billing
+ cancellation         security
+ features             account_management
+ notifications        api
 ```
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ```bash
 # Test preprocessor
@@ -269,7 +269,7 @@ python ml/test_vectorizer.py
 python app/test_api.py
 ```
 
-## 🐳 Docker Deployment
+##  Docker Deployment
 
 ### Build locally:
 ```bash
@@ -300,7 +300,7 @@ OS/ARCH: linux/amd64
 
 ---
 
-## 🔧 Configuration
+##  Configuration
 
 Key parameters in `train.py`:
 
@@ -330,17 +330,17 @@ trainer.train(
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Vikash Kumar**
 
-- 📧 Email: vikash111107@gmail.com
-- 🐙 GitHub: [github.com/Vikash4122002](https://github.com/Vikash4122002)
-- 🐳 Docker Hub: [hub.docker.com/r/vikash4122002](https://hub.docker.com/r/vikash4122002)
+-  Email: vikash111107@gmail.com
+-  GitHub: [github.com/Vikash4122002](https://github.com/Vikash4122002)
+-  Docker Hub: [hub.docker.com/r/vikash4122002](https://hub.docker.com/r/vikash4122002)
 
 ---
 
-## 📄 License
+##  License
 
 This project is open source and available under the [MIT License](LICENSE).
 
@@ -348,6 +348,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 <div align="center">
 
-Made with ❤️ by Vikash Kumar
+Made by Vikash Kumar
 
 </div>
