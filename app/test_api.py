@@ -174,11 +174,11 @@ def run_all_tests():
         try:
             test()
         except requests.exceptions.ConnectionError:
-            print(f"\n❌ Cannot connect to {BASE_URL}.")
+            print(f"\n Cannot connect to {BASE_URL}.")
             print("   Start the server first: uvicorn app.main:app --reload")
             break
         except Exception as e:
-            print(f"\n❌ Error in {test.__name__}: {e}")
+            print(f"\n Error in {test.__name__}: {e}")
 
     print(f"\n{'*' * 60}\n  ALL TESTS COMPLETE\n{'*' * 60}\n")
 
