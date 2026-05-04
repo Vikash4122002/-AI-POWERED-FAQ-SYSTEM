@@ -182,8 +182,9 @@ Open: **http://localhost:8000/docs**
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/Vikash4122002/AI-POWERED-FAQ-SYSTEM.git
-cd AI-POWERED-FAQ-SYSTEM
+git clone https://github.com/Vikash4122002/-AI-POWERED-FAQ-SYSTEM.git
+cd -AI-POWERED-FAQ-SYSTEM
+docker compose up --build
 
 # 2. Create virtual environment
 python -m venv venv
