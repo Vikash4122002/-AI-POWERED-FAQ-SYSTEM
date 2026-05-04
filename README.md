@@ -181,24 +181,27 @@ Open: **http://localhost:8000/docs**
 ### Option 2 — Python Setup
 
 ```bash
-# 1. Clone the repository
+## 🚀 Quick Start
+
+```bash
 git clone https://github.com/Vikash4122002/-AI-POWERED-FAQ-SYSTEM.git
 cd -AI-POWERED-FAQ-SYSTEM
 docker compose up --build
+```
 
-# 2. Create virtual environment
-python -m venv venv
-venv\Scripts\activate      # Windows
-source venv/bin/activate   # macOS/Linux
+👉 Open in browser:
+http://localhost:8000/docs
 
-# 3. Install dependencies
-pip install -r requirements.txt
+⚠️ If port 8000 is already in use:
 
-# 4. Train the model
-python train.py
+```bash
+docker compose down
+docker compose up --build
+```
 
-# 5. Start the server
-uvicorn app.main:app --reload
+or use:
+http://localhost:8001/docs
+
 ```
 
 Open: **http://localhost:8000/docs**
