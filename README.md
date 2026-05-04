@@ -180,8 +180,7 @@ Open: **http://localhost:8000/docs**
 
 ### Option 2 — Python Setup
 
-```bash
-## 🚀 Quick Start
+## 🚀 Quick Start (Recommended)
 
 ```bash
 git clone https://github.com/Vikash4122002/-AI-POWERED-FAQ-SYSTEM.git
@@ -194,17 +193,15 @@ http://localhost:8000/docs
 
 ⚠️ If port 8000 is already in use:
 
+* Run:
+
 ```bash
 docker compose down
 docker compose up --build
 ```
 
-or use:
-http://localhost:8001/docs
-
-```
-
-Open: **http://localhost:8000/docs**
+* OR open:
+  http://localhost:8001/docs
 
 ### Option 3 — Docker Compose
 
